@@ -4,8 +4,8 @@ from selenium.webdriver.chrome.service import Service
 
 class Base_test:
 
-    service = Service("C:\\Users\\user\\Documents\\chromedriver.exe")
-    driver = webdriver.Chrome(service=service)
+    #service = Service("C:\\Users\\user\\Documents\\chromedriver.exe")
+    driver = webdriver.Chrome()
 
     def init(self):
         self.driver.get("https://www.demoblaze.com/")

@@ -55,10 +55,7 @@ class HomePage(Base_test, Home_locators):
         self. driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
         time.sleep(2)
 
-    def scroll_page_up(self):
-        time.sleep(2)
-        self.driver.execute_script("window.scrollBy(1300, 0);")
-        self.driver.implicitly_wait(5)
+
 
 
 
@@ -202,7 +199,7 @@ class HomePage(Base_test, Home_locators):
 
     @allure.description('Insert Year on Year-Field')
     @pytest.mark.sanity
-    def Yearfeild(self, Yearfeild):
+    def Yearfeild(self,  Yearfeild):
         self.driver.find_element(By.XPATH, self.Year_feild).clear()
         self.driver.find_element(By.XPATH, self.Year_feild).send_keys(Yearfeild)
         self.driver.implicitly_wait(5)
